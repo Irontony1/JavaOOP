@@ -14,17 +14,17 @@ public class Bird extends Animal{
 
     @Override
     public boolean run(Obstacle obstacle) {
-        return powerOfRun >= obstacle.getObstacleValueLong();
+        return powerOfRun + Randomize.longRate(powerOfRun) >= obstacle.getObstacleValueLong();
     }
 
     @Override
     public boolean swimm(Obstacle obstacle) {
-        return powerOfSwimm >= obstacle.getObstacleValueLong();
+        return powerOfSwimm + Randomize.longRate(powerOfSwimm) >= obstacle.getObstacleValueLong();
     }
 
     @Override
     public boolean jump(Obstacle obstacle) {
-        return powerOfJump >= obstacle.getObstacleValueHigh();
+        return powerOfJump + Randomize.doubleRate(powerOfJump) >= obstacle.getObstacleValueHigh();
     }
 
     public String getName() {

@@ -10,8 +10,8 @@ public class Main {
         Cat cat1 = new Cat("Barsik");
         Dog dog1 = new Dog("Bobik");
         Bird bird1 = new Bird("Chirik");
-        Obstacle waterObstacle = new Obstacle(423,0.0);
-        Obstacle highObstacle = new Obstacle(0,1.2);
+        Obstacle waterObstacle = new Obstacle(145,0.0);
+        Obstacle highObstacle = new Obstacle(0,1.6);
         Obstacle longObstacle = new Obstacle(1000,0.0);
 
         System.out.println(cat1.getName() + " смог преодолеть препядствие? " + cat1.run(longObstacle));
